@@ -3478,8 +3478,10 @@ let pokemons = [
 let spliced = pokemons.splice(0 , 21)
 // copyrighted by Mirmuhsin
 let elList = document.querySelector("#list");
-
-function render(lol) {
+elList.addEventListener("click" , function (params) {
+	alert("NICEEE CHOOOICEEE BROO!!!!!!")
+})
+function render(lol) {	
     for (let i = 0; i < spliced.length; i++) {
         let newLi = document.createElement("li")
         let newImg = document.createElement("img")
