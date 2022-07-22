@@ -3493,7 +3493,6 @@ function render(lol) {
         let srcp1 = spliced[i]["type"].join(" , ")
         let srcp2 = spliced[i]["weight"]
         let srcp3 = spliced[i]["height"]   
-        console.log(src);
         // copyrighted by Mirmuhsin
         for (let k = 0; k < spliced.length; k++) {
             elList.appendChild(newLi)
@@ -3512,7 +3511,7 @@ function render(lol) {
             newP2.textContent = srcp3
             newLi.appendChild(newP3)
             newP3.classList.add("text1")
-            newP2.textContent = srcp2
+            newP3.textContent = srcp2
             newLi.appendChild(newP4)
             newP4.classList.add("text2")
             newP4.textContent = "Great choiсe !!!"
