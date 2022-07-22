@@ -3476,7 +3476,7 @@ let pokemons = [
 ];
 
 let spliced = pokemons.splice(0 , 21)
-
+// copyrighted by Mirmuhsin
 let elList = document.querySelector("#list");
 
 function render(lol) {
@@ -3494,6 +3494,7 @@ function render(lol) {
         let srcp2 = spliced[i]["weight"]
         let srcp3 = spliced[i]["height"]   
         console.log(src);
+        // copyrighted by Mirmuhsin
         for (let k = 0; k < spliced.length; k++) {
             elList.appendChild(newLi)
             newLi.classList.add("col-lg-3" ,"mb-5" ,"col-12" ,"align-items-center" ,"d-flex" ,"flex-column","justify-content-center", "mb-3")
@@ -3518,5 +3519,5 @@ function render(lol) {
         }
     }
 }
-
+// copyrighted by Mirmuhsin
 render()
