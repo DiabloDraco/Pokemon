@@ -3475,14 +3475,14 @@ let pokemons = [
 	},
 ];
 
-let spliced = pokemons.splice(0 , 21)
+// let pokemons = pokemons.splice(0 , 21)
 // copyrighted by Mirmuhsin
 let elList = document.querySelector("#list");
 elList.addEventListener("click" , function (params) {
 	alert("NICEEE CHOOOICEEE BROO!!!!!!")
 })
 function render(lol) {	
-    for (let i = 0; i < spliced.length; i++) {
+    for (let i = 0; i < pokemons.length; i++) {
         let newLi = document.createElement("li")
         let newImg = document.createElement("img")
         let newh = document.createElement("h3")
@@ -3490,13 +3490,13 @@ function render(lol) {
         let newP2 = document.createElement("P")
         let newP3 = document.createElement("P")
         let newP4 = document.createElement("P")
-        let src = spliced[i]["img"]
-        let srch = spliced[i]["name"]
-        let srcp1 = spliced[i]["type"].join(" , ")
-        let srcp2 = spliced[i]["weight"]
-        let srcp3 = spliced[i]["height"]   
+        let src = pokemons[i]["img"]
+        let srch = pokemons[i]["name"]
+        let srcp1 = pokemons[i]["type"].join(" , ")
+        let srcp2 = pokemons[i]["weight"]
+        let srcp3 = pokemons[i]["height"]   
         // copyrighted by Mirmuhsin
-        for (let k = 0; k < spliced.length; k++) {
+        for (let k = 0; k < pokemons.length; k++) {
             elList.appendChild(newLi)
             newLi.classList.add("col-lg-3" ,"mb-5" ,"col-12" ,"align-items-center" ,"d-flex" ,"flex-column","justify-content-center", "mb-3")
             newLi.appendChild(newImg)
